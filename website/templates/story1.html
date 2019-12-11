@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Affordable Housing</title>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+
+
+		
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_arturo.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		
+
+
+</head>
+
+<body>
+   <!-- Nav start-->
+   <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+              <a class="navbar-brand" href="{{ url_for('index') }}"><img style="width:80px;height:80px;" src="{{ url_for('static', filename='images/kissclipart-design-thinking-icon-png-clipart-icon-design-compu-c9a9e17540f61b3a.png') }}" alt="thinking icon"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse navElement" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto btn-style ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('team') }}">About the Team</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Data Stories
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="{{ url_for('story1') }}">What's Happening?</a>
+                              <a class="dropdown-item" href="{{ url_for('story2') }}">Where is it?</a>
+                              <a class="dropdown-item" href="{{ url_for('story3') }}">Needs vs Subsidies vs Realities</a>
+                              <a class="dropdown-item" href="{{ url_for('story4') }}">Your Neighborhood</a>
+                          </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Building Consulting Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ url_for('tool') }}">Building Tool</a>
+                        <a class="dropdown-item" href="{{ url_for('samplesite1') }}">Proposed Building Site 1</a>
+                        <a class="dropdown-item" href="{{ url_for('samplesite2') }}">Proposed Building Site 2</a>
+                        <a class="dropdown-item" href="{{ url_for('samplesite3') }}">Proposed Building Site 3</a>
+                    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">About AAHA Building Corp</a>
+            </li>
+                </ul>
+                <a class="navbar-brand" href="{{ url_for('index') }}" style="color: #F1C40F ;">AAHA Analytics</a>
+              </div>
+              
+            </nav>
+            <!-- Nav end-->
+            <!-- Beginning container-->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 jumbotron text-center jumbotron-fluid bg-warning">
+                  <h1>Achieving Affordable Housing in Atlanta</h1>
+                  <p style="color: white;">Use the interactive charts below to explore the dataset</p>
+                </div>
+              </div>
+            </div>
+                <div class="row">
+                  
+                          </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+                              <div class="container" >  
+              <div class="row align-items-center">
+                  <div class="col-12">
+				  <div class="tb1" id="tb1"> </div>
+				  <center>
+<div class='tableauPlaceholder' id='viz1571857755710' style='margin: auto;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AA&#47;AAHAWebProject-Story1StoryVersion&#47;Whatshappeningwithrenters&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='margin:auto;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AAHAWebProject-Story1StoryVersion&#47;Whatshappeningwithrenters' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AA&#47;AAHAWebProject-Story1StoryVersion&#47;Whatshappeningwithrenters&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1571857755710');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</center>                 
+				 </div>
+              </div>
+            </div>  <br><br><br>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Change in household income types</a>
+                          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">% income spent on rent</a>
+                          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Rent burden over time</a>
+                          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Change in rent burden status</a>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><h5 class="mt-0 mb-1">What's happening with renters?, 2014-2018</h5>
+                            <strong> <i>Change in household income type</i></strong> 
+                            <ul>
+                                <li>2014-2017 has seen an upward Influx of moderate to higher-income households into the Metro ATL area.</li>
+                                <li>The same time period has seen a decline of low-income households in the Metro ATL area.</li>
+                                <li>In order to isolate these simple household income groupings, we calculated groups based on Atlanta’s
+                                  Area Median Income, then aligned those with the income brackets used by the U.S. Census.</li>
+                                  <li>Household income groups key:<br>
+                                    ○ Low income<br>
+                                    <p style="margin-left:20px"> 
+                                    ■ Less than $10,000<br>
+                                    ■ $10,000-$19,999<br>
+                                    ■ $20,000-$34,999</p>
+                                    ○ Moderate income<br>
+                                    <p style="margin-left:20px">■ $35,000-$49,999<br>
+                                    ■ $50,000-$74,999</p>
+                                    ○ Higher income<br>
+                                    <p style="margin-left:20px">■ $75,000-$99,999<br>
+                                    ■ $100,000 or more</li>
+                              </ul></div>
+                          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><h5 class="mt-0 mb-1">What's happening with renters?, 2014-2018</h5>
+                            <strong> <i>% income spent on rent</i></strong> 
+                            <ul>
+                                <li>Though housing cost burden is a challenge for many, the data shows
+                                    that, on average across Metro ATL from 2014-2017, severe rent burden among those with low incomes
+                                    is most prevalent, while non rent burden among those with the higher incomes is also prevalent,
+                                    highlighting a disproportionate cost burden between the two.</li>
+                                <li>Decline of low-income households in the Metro ATL area</li>
+                                <li> Rental cost burden is grouped according
+                                    to the city’s--and widely-accepted--classifications of cost burden and the Census brackets denoting % of
+                                    household income spent on rent:</li>
+                                    <li>Rent burden groups key:<br>
+                                      ● Non rent-burdened<br>
+                                      <p style="margin-left:20px">
+                                      ○ Less than 20%<br>
+                                      ○ 20-24.9%<br>
+                                      ○ 25-29.9%</p>
+                                      ● Rent burden<br>
+                                      <p style="margin-left:20px">
+                                      ○ 30-34.9%<br>
+                                      ○ 35-39.9%<br>
+                                      ○ 40-49.9%</p>
+                                      ● Severe rent burden<br>
+                                      <p style="margin-left:20px">○ 50% or more</p></li>
+                              </ul></div>
+                          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><h5 class="mt-0 mb-1">What's happening with renters?, 2014-2018</h5>
+                            <strong> <i>Rent burden over time</i></strong> 
+                            <ul>
+                                <li>From 2014-17, there has been disproportionately high rent burden for
+                                    lower income groups in Metro ATL, though slightly declining as low-income households migrate away
+                                    from the city.</li>
+                                <li>Conversely, higher income renters have enjoyed increasingly less rent burden over time,
+                                    even as higher-income households migrate into Metro ATL.</li>
+
+                              </ul></div>
+                          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"><h5 class="mt-0 mb-1">What's happening with renters?, 2014-2018</h5>
+                            <strong> <i>Change in rent burden status</i></strong> 
+                            <ul>
+                                <li>In addition to other observations noted above, rent burden has
+                                held strong among low-income renters and climbed slightly among moderate- and higher-income
+                                renters from 2014-2017.</li>
+                                <li>Overall, rental cost burden among renters is more frequent on average across
+                                    Metro ATL than is non rent-burden, which is enjoyed almost exclusively by higher-income renters.</li>
+                              </ul></div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+                          
+
+              </div>
+            </div>
+            
+   <!-- end container-->
+       <!-- Footer container-->
+		<div class="container-fluid " style="background-color: #f2f2f2; height: 100px; padding: 20px;">
+        <div class="row infoarea">
+          <div class="col-6" style="text-align: center;">
+            <span style="color: #2874A6 ;">Copyright Info © 2019 AAHA Analytics Firm</span>
+          </div>
+          <div class="col-6">
+            <span class="align-content-start" style="color: #2874A6 ;">Media:</span> <br>
+            <a class="social" href="#" style="color: #F1C40F;">@Facebook</a>
+            <a class="social" href="#" style="color: #F1C40F;">@GitHub</a>
+            <a class="social" href="#" style="color: #F1C40F;">@Twitter</a>
+          </div>
+        </div>
+  
+      </div>
+      <!-- Footer end-->
+      
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>       
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+
+</html>
